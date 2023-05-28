@@ -1,6 +1,6 @@
 # MonoTimer
 
-这是一个基于MonoBehaviour的计时系统， 支持真实时间和受TimeScale影响时间的计时。
+这是一个基于MonoBehaviour的Unity的计时系统， 支持真实时间和受TimeScale影响时间的计时。
 
 原理就是加入任务时计算完成时的时间，根据这个时间进行排序，数据结构用的是SortSet。然后在Update循环中只等待第一个任务，完成后再等第二个任务。
 
